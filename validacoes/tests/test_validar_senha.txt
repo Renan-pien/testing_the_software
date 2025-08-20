@@ -1,0 +1,11 @@
+# Testes de Senha (caixa preta)
+
+Entrada:              | Esperado:
+----------------------------------
+"Senha123!"           | True
+"senha123!"           | False (sem letra maiúscula)
+"SENHA123!"           | False (sem letra minúscula - não está sendo exigido no código!)
+"Senha!"              | False (sem número)
+"Senha123"            | False (sem caractere especial)
+"Se123!"              | False (muito curta)
+"Senha123!Senha123!Senha" | False (muito longa)

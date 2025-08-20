@@ -1,0 +1,9 @@
+# Testes de CPF (caixa preta)
+
+Entrada:               | Esperado:
+----------------------------------
+"123.456.789-00"       | False  (dígito verificador inválido)
+"111.111.111-11"       | False  (todos os dígitos iguais)
+"123.456.789-0a"       | False  (letra no lugar do número)
+"12345678900"          | False  (sem pontos e traço)
+"390.533.447-05"       | True   (formato válido - simulado)
